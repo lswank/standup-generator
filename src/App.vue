@@ -74,6 +74,10 @@ export default {
         alert('Please enter some input to process.');
         return;
       }
+      if (!this.openai) {
+        alert('OpenAI is not initialized. Please save your OpenAI API key again.');
+        return;
+      }
       this.output = 'Processing...';
 
       let prompt = `Generate a structured standup check-in message where each line represents a specific task or activity, following a predefined format. Each line combines emojis, links, and text to convey the task type, priority, status, and other relevant details clearly and concisely.
