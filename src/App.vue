@@ -8,7 +8,7 @@
 
 <p>Introducing the world's most unnecessarily over-engineered, AI-powered status report generator! Gone are the days of typing out your daily tasks like some sort of Dickensian clerk. With this marvel of modern wizardry, you can now summon the digital spirits of Silicon Valley to conjure up your status reports by entering in some word vomit.</p>
 
-<p>Note: Requires your own OpenAI API Key. If you're logged in, you can get one <a href="https://platform.openai.com/api-keys">here</a>.
+<p>Note: Requires your own OpenAI API Key. If you're logged in, you can get one <a href="https://platform.openai.com/api-keys">here</a>. Also, don't use this in secure environments. Data goes to OpenAI, not to me.
     </p>
     <div class="flex-container">
       <button 
@@ -37,13 +37,26 @@
           readonly>
       </textarea>
     </div>
+    <div class="social-links">
+      
+    </div>
+    <p>Your PRs are welcome <a href="https://twitter.com/LSwank" target="_blank">
+        <github-icon />
+      </a>, or leave me a comment on <a href="https://github.com/lswank/standup-generator" target="_blank">
+        <twitter-icon />
+      Twitter</a> </p>
   </div>
 </template>
 
 <script>
 import { OpenAI } from 'openai';
+import { AkTwitterFill, AkGithubFill } from "@kalimahapps/vue-icons";
 
-export default {  
+export default {
+  components: {
+    'twitter-icon': AkTwitterFill,
+    'github-icon': AkGithubFill
+  },
   data() {
     return {
       openai: null,
