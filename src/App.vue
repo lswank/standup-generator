@@ -40,9 +40,9 @@
     <div class="social-links">
       
     </div>
-    <p>Your PRs are welcome <a href="https://twitter.com/LSwank" target="_blank">
+    <p>Your PRs are welcome <a href="https://github.com/lswank/standup-generator" target="_blank">
         <github-icon />
-      </a>, or leave me a comment on <a href="https://github.com/lswank/standup-generator" target="_blank">
+      </a>, or leave me a comment on <a href="https://twitter.com/LSwank" target="_blank">
         <twitter-icon />
       Twitter</a> </p>
   </div>
